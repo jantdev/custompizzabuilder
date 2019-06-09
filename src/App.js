@@ -7,7 +7,7 @@ import pizzaData from "./pizzadata.json";
 import React, { Component } from "react";
 import Rating from "./components/rating/rating";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import "./app/app.scss";
+import "./components/app/app.scss";
 
 class App extends Component {
   state = {
