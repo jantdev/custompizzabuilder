@@ -1,0 +1,79 @@
+.steeldesk {
+  background: #333 url(../../images/steel.jpg) no-repeat;
+  position: absolute;
+  width: 370px;
+  height: 800px;
+  left: -800px;
+  top: -20px;
+  z-index: 400;
+  box-shadow: 10px 9px 13px -6px rgba(0, 0, 0, 0.42);
+  animation-name: steeldesk;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  .calculator {
+    background: url(../../images/caseslip.png);
+    width: 343px;
+    height: 79px;
+    position: relative;
+    top: 30px;
+    left: 10px;
+    .receipt {
+      background: url(../../images/receipt.png) no-repeat 0px 0px;
+      width: 277px;
+      height: 408px;
+      z-index: 5;
+      position: absolute;
+      left: 30px;
+      top: 38px;
+
+      .content {
+        width: 240px;
+        padding-left: 34px;
+        padding-top: 15px;
+        .rheader {
+          text-align: center;
+          text-transform: uppercase;
+          font-weight: bold;
+          border-bottom: 2px solid #333;
+        }
+        .total,
+        .totalprice {
+          text-transform: uppercase;
+          font-weight: bold;
+          border-top: 2px solid #333;
+        }
+        .totalprice {
+          text-align: right;
+        }
+        .niceday {
+          font-size: 10px;
+          text-align: center;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+        .ingredientprice {
+          text-align: right;
+        }
+      }
+    }
+  }
+  .btn-rating {
+    position: absolute;
+    top: 700px;
+    left: 60px;
+    padding: 10px 90px;
+  }
+}
+
+@keyframes steeldesk {
+  0% {
+    left: -800px;
+    top: -20px;
+  }
+  100% {
+    left: 0px;
+    top: -20px;
+  }
+}

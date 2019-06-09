@@ -1,0 +1,64 @@
+$pizzaWidth: 590px;
+$pizzaHeight: 571px;
+
+.Pizza {
+  height: $pizzaHeight;
+  width: $pizzaWidth;
+
+  position: relative;
+  .Base {
+    position: absolute;
+    z-index: 10;
+    background: url(../../images/Base.png);
+    height: $pizzaHeight;
+    width: $pizzaWidth;
+    left: -1200px;
+    top: 0px;
+    animation-name: onShovel;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+
+  .ingredient {
+    position: absolute;
+    left: 60px;
+    height: $pizzaHeight;
+    width: $pizzaWidth;
+  }
+
+  .Shovel {
+    position: absolute;
+    z-index: 1;
+    background: url(../../images/Shovel.png);
+    height: $pizzaHeight;
+    width: 1000px;
+    left: -2000px;
+    animation-name: Shovel;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+  @keyframes Shovel {
+    0% {
+      left: -2000px;
+      top: 0px;
+    }
+    100% {
+      left: -336px;
+      top: 0px;
+    }
+  }
+  @keyframes onShovel {
+    0% {
+      left: -1600px;
+      top: 0px;
+    }
+    100% {
+      left: 60px;
+      top: 0px;
+    }
+  }
+}

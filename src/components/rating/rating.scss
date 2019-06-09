@@ -1,0 +1,20 @@
+.rating {
+  .card {
+    border: 0;
+  }
+  .card-body {
+    padding: 0px 10px 0px 0px;
+  }
+  .container {
+    padding-left: 0px;
+    padding-right: 0px;
+    .smiley {
+      width: 200px;
+      height: 200px;
+    }
+    .score {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+}

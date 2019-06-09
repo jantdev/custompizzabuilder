@@ -1,0 +1,30 @@
+.menu {
+  background: url(../../images/menu.png) no-repeat;
+  width: 84%;
+  position: relative;
+  top: -900px;
+  animation-name: Menu;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  h3 {
+    padding-top: 20px;
+    padding-left: 90px;
+    margin-bottom: 56px;
+  }
+  .ingredients {
+    padding-left: 57px;
+    padding-right: 90px;
+    height: 600px;
+    font-family: "Merienda", cursive;
+  }
+}
+
+@keyframes Menu {
+  0% {
+    top: -900px;
+  }
+  100% {
+    top: -10px;
+  }
+}
