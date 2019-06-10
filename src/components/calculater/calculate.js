@@ -30,7 +30,7 @@ class Calculate extends Component {
     return (
       <Row>
         <Col className="total">total</Col>
-        <Col className="totalprice">${price}</Col>
+        <Col className="totalprice">${String(price).substr(0, 4)}</Col>
       </Row>
     );
   };

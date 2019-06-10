@@ -16,44 +16,44 @@
     {
       "htmlname": "Cheese",
       "title": "Cheese",
-      "price": 2,
+      "price": 1.4,
       "points": 15
     },
     {
       "htmlname": "Bacon",
       "title": "Bacon",
-      "price": 4,
+      "price": 2.3,
       "points": 10
     },
     {
       "htmlname": "Pepperoni",
       "title": "Pepperoni",
-      "price": 4,
+      "price": 1.4,
       "points": 10
     },
     {
       "htmlname": "Mushrooms",
       "title": "Mushrooms",
-      "price": 2,
+      "price": 1.4,
       "points": 2
     },
     {
       "htmlname": "Onions",
       "title": "Onions",
-      "price": 1,
+      "price": 0.3,
       "points": 5
     },
     {
       "htmlname": "Chilli",
       "title": "Chilli",
-      "price": 3,
+      "price": 1.4,
       "points": 10
     },
 
     {
       "htmlname": "Olives",
       "title": "Olives",
-      "price": 2,
+      "price": 1.4,
       "points": 5
     },
     {
@@ -65,7 +65,7 @@
     {
       "htmlname": "Pineapple",
       "title": "Pineapple",
-      "price": 5,
+      "price": 2.8,
       "points": 1
     }
   ],
