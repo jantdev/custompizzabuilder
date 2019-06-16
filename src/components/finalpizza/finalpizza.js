@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Image, Button } from "react-bootstrap";
 import "./finalpizza.scss";
-import "./banner.scss";
 
 class Finalpizza extends Component {
   state = {

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import propTypes from "prop-types";
 import "./ingredient.scss";
-import "./funkyradio.scss";
 class Ingredient extends Component {
   state = {
     ingredients: this.props.pizzaData.ingredients

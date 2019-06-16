@@ -40,13 +40,13 @@ class App extends Component {
       showRating: false
     });
   };
-
+  /*
   componentDidMount = () => {
     setTimeout(() => {
       this.setState({ showIntroMessage: true });
     }, 3000);
   };
-
+*/
   render() {
     return (
       <div>

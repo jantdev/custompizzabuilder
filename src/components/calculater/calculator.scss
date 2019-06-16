@@ -3,21 +3,37 @@
   position: absolute;
   width: 370px;
   height: 800px;
-  left: -800px;
-  top: -20px;
+  left: 0px;
+  top: 0px;
   z-index: 400;
+  opacity: 0;
   box-shadow: 10px 9px 13px -6px rgba(0, 0, 0, 0.42);
   animation-name: steeldesk;
   animation-duration: 1s;
   animation-delay: 2s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
+  .showHideCalculator {
+    position: absolute;
+    z-index: 100;
+    left: 370px;
+    top: 0px;
+    width: 100px;
+    text-align: center;
+    height: 50px;
+    padding-top: 14px;
+    background: #333 url(../../images/steel.jpg) 25% 70% no-repeat;
+    box-shadow: 6px 6px 33px -6px rgba(0, 0, 0, 0.42);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0px 0px 20px 0px;
+  }
   .calculator {
     background: url(../../images/caseslip.png);
     width: 343px;
     height: 79px;
     position: relative;
-    top: 30px;
+    top: 10px;
     left: 10px;
     .receipt {
       background: url(../../images/receipt.png) no-repeat 0px 0px;
@@ -69,11 +85,11 @@
 
 @keyframes steeldesk {
   0% {
+    opacity: 1;
     left: -800px;
-    top: -20px;
   }
   100% {
     left: 0px;
-    top: -20px;
+    opacity: 1;
   }
 }
