@@ -26,6 +26,7 @@ class Intromessage extends Component {
             ingredients. After you are finnish designing your Pizza, click on
             Rating, to bake your Pizza and get your rating.
           </p>
+          <p className="warning">this is only a desktop demo</p>
           <Button variant="secondary" onClick={this.handleClose}>
             Got it
           </Button>

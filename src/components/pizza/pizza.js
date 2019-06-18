@@ -18,7 +18,10 @@ class Pizza extends Component {
             zIndex: localLayer,
             display: "block",
             background:
-              "url(" + require("../../images/" + item.title + ".png") + ")"
+              "url(" +
+              require("../../images/" + item.title + ".png") +
+              ") no-repeat",
+            backgroundSize: "contain"
           };
         }
         localLayer++;

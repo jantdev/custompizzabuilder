@@ -1,5 +1,7 @@
-$pizzaWidth: 590px;
-$pizzaHeight: 571px;
+$pizzaWidth: 50vw;
+$pizzaHeight: 50vw;
+$pizzaMaxWidth: 590px;
+$pizzaMaxHeight: 571px;
 
 .Pizza {
   height: $pizzaHeight;
@@ -9,9 +11,12 @@ $pizzaHeight: 571px;
   .Base {
     position: absolute;
     z-index: 10;
-    background: url(../../images/Base.png);
+    background: url(../../images/Base.png) no-repeat;
+    background-size: contain;
     height: $pizzaHeight;
     width: $pizzaWidth;
+    max-width: $pizzaMaxWidth;
+    max-height: $pizzaMaxHeight;
     left: -1200px;
     top: 0px;
     animation-name: onShovel;
@@ -23,15 +28,18 @@ $pizzaHeight: 571px;
 
   .ingredient {
     position: absolute;
-    left: 60px;
+    left: 5vw;
     height: $pizzaHeight;
     width: $pizzaWidth;
+    max-width: $pizzaMaxWidth;
+    max-height: $pizzaMaxHeight;
   }
 
   .Shovel {
     position: absolute;
     z-index: 1;
-    background: url(../../images/Shovel.png);
+    background: url(../../images/Shovel.png) no-repeat;
+    background-size: contain;
     height: $pizzaHeight;
     width: 1000px;
     left: -2000px;
@@ -41,23 +49,52 @@ $pizzaHeight: 571px;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
   }
-  @keyframes Shovel {
-    0% {
-      left: -2000px;
-      top: 0px;
-    }
-    100% {
-      left: -336px;
-      top: 0px;
+  @media (max-width: 1024px) {
+    @keyframes Shovel {
+      0% {
+        left: -2000px;
+        top: 0px;
+      }
+      100% {
+        left: -36vw;
+        top: 0px;
+      }
     }
   }
+
+  @media (max-width: 768px) {
+    @keyframes Shovel {
+      0% {
+        left: -2000px;
+        top: 0px;
+      }
+      100% {
+        left: -32vw;
+        top: 0px;
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    @keyframes Shovel {
+      0% {
+        left: -2000px;
+        top: 0px;
+      }
+      100% {
+        left: -326px;
+        top: 0px;
+      }
+    }
+  }
+
   @keyframes onShovel {
     0% {
       left: -1600px;
       top: 0px;
     }
     100% {
-      left: 60px;
+      left: 5vw;
       top: 0px;
     }
   }
